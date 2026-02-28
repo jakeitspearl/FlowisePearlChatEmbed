@@ -40,7 +40,18 @@
                         sendButtonColor: '#18449D',
                         placeholder: 'Type your message...'
                     }
-                }
+                },
+                customCSS: `
+                    figure:has(img[alt="Bot avatar"]) {
+                        background-color: white !important;
+                        border-radius: 6px !important;
+                        padding: 3px !important;
+                    }
+                    img[alt="Bot avatar"] {
+                        object-fit: contain !important;
+                        border-radius: 3px !important;
+                    }
+                `
             }
         })
     </script>
